@@ -1,0 +1,16 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: "aws.users"
+
+  datasource:
+    url: jdbc:mysql://database-user.cwpiwkguuni1.us-east-1.rds.amazonaws.com:3306/user-aws
+    username: root
+    password: aA99062800123*
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
