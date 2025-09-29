@@ -34,4 +34,9 @@ public class UserRestController {
     ) {
         return ResponseEntity.ok(userHandler.getUser(id));
     }
+
+    @GetMapping("/health")
+    public ResponseEntity<Void> checkHealth() {
+        return ResponseEntity.ok().build();
+    }
 }
